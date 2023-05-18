@@ -3,12 +3,14 @@ import "./Subscription.css"
 
 function Subscriptions(props) {
   return (
+    <>
     <div className='subscription'>
         <div className="subscription_title">{props.date}</div>
         <h2><div className="title">{props.title}</div></h2>
         <div className="subscription_price ">{props.amount}</div>
       
     </div>
+    </>
   )
 }
 

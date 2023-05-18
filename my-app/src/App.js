@@ -1,4 +1,5 @@
 import './App.css';
+import NAvbar from './components/NAvbar';
 import Subscriptions from './components/Subscriptions';
 
 function App() {
@@ -36,6 +37,8 @@ function App() {
   ]
   
   return (
+    <>
+    <NAvbar/>
     <div className="App">
       <h1>Muhammad Saif Ur Rehman</h1>
       <Subscriptions date={subscription[0].date.toISOString()} title={subscription[0].title} amount={subscription[0].price}/>
@@ -44,6 +47,7 @@ function App() {
       <Subscriptions date={subscription[3].date.toISOString()} title={subscription[3].title} amount={subscription[3].price}/> 
       <Subscriptions date={subscription[4].date.toISOString()} title={subscription[4].title} amount={subscription[4].price}/> 
     </div>
+    </>
   );
 }
 
