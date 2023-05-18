@@ -34,11 +34,7 @@ function App() {
       <h1>Muhammad Saif Ur Rehman</h1>
       <Subscriptions date={subscription[0].date.toISOString()} title={subscription[0].title} amount={subscription[0].price}/>
       <Subscriptions date={subscription[1].date.toISOString()} title={subscription[1].title} amount={subscription[1].price}/>
-      <Subscriptions date={subscription[1].date.toISOString()} title={subscription[2].title} amount={subscription[2].price}/>
-
-      {/* <Subscriptions passDate={subscriptions[0].date.toISOString()} passTitle={subscriptions[0].title} passAmount={subscriptions[0].amount}/>
-      <Subscriptions passDate={subscriptions[1].date.toISOString()} passTitle={subscriptions[1].title} passAmount={subscriptions[1].amount}/>
-      <Subscriptions passDate={subscriptions[2].date.toISOString()} passTitle={subscriptions[2].title} passAmount={subscriptions[2].amount}/> */}
+      <Subscriptions date={subscription[1].date.toISOString()} title={subscription[2].title} amount={subscription[2].price}/> 
     </div>
   );
 }
