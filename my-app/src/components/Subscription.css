@@ -1,0 +1,22 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.subscription{
+    background-color: aquamarine;
+    word-spacing: normal;
+}
+.time{
+    background-color: yellowgreen;
+    font-size: 20px;
+    text-align: left;
+}
+.title{
+    background-color: yellow;
+    font-size: 20px;
+}
+.amount{
+    background-color: violet;
+    font-size: 20px;
+    text-align: right;
+}
