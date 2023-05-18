@@ -2,30 +2,36 @@ import './App.css';
 import Subscriptions from './components/Subscriptions';
 
 function App() {
-  let subscription=[
+  let subscription =[
     {
       id:"1",
-      date:(new Date("2023","05","18")),
-      title:"Monthly Sub",
-      price: "15$"
+      date: (new Date("2023","05","18")),
+      title:"Monthly Subscription",
+      price:"30$"
     },
     {
       id:"2",
-      date:(new Date("2023","05","18")),
-      title:"Weekly Sub",
-      price: "4$"
+      date: (new Date("2023","05","18")),
+      title:"Weekly Subscription",
+      price:"8$"
     },
     {
       id:"3",
-      date:(new Date("2023","05","18")),
-      title:"Yearly Sub",
-      price: "150$"
+      date: (new Date("2023","05","18")),
+      title:"Yearly Subscription",
+      price:"360$"
     },
     {
       id:"4",
-      date:(new Date("2023","05","18")),
-      title:"Daily Sub",
-      price: "0.20$"
+      date: (new Date("2023","05","18")),
+      title:"Daily Subscription",
+      price:"1$"
+    },
+    {
+      id:"5",
+      date: (new Date("2023","05","18")),
+      title:"15Days Subscription",
+      price:"15$"
     }
   ]
   
@@ -34,7 +40,9 @@ function App() {
       <h1>Muhammad Saif Ur Rehman</h1>
       <Subscriptions date={subscription[0].date.toISOString()} title={subscription[0].title} amount={subscription[0].price}/>
       <Subscriptions date={subscription[1].date.toISOString()} title={subscription[1].title} amount={subscription[1].price}/>
-      <Subscriptions date={subscription[1].date.toISOString()} title={subscription[2].title} amount={subscription[2].price}/> 
+      <Subscriptions date={subscription[2].date.toISOString()} title={subscription[2].title} amount={subscription[2].price}/> 
+      <Subscriptions date={subscription[3].date.toISOString()} title={subscription[3].title} amount={subscription[3].price}/> 
+      <Subscriptions date={subscription[4].date.toISOString()} title={subscription[4].title} amount={subscription[4].price}/> 
     </div>
   );
 }
