@@ -6,7 +6,7 @@ function App() {
   let subscription =[
     {
       id:"1",
-      date: (new Date("2023","05","18")),
+      date: (new Date("2023","04 ","18")),
       title:"Monthly Subscription",
       price:"30$"
     },
