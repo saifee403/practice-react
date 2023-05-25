@@ -14,7 +14,7 @@ function NAvbar() {
                         <a href="#">Contact</a>
                     </nav>
                 </div>
-        </div>
+          </div>
     </div>
   )
 }
