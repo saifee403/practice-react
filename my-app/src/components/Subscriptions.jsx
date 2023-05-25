@@ -3,21 +3,20 @@ import "./Subscription.css"
 import SubscriptionDate from './SubscriptionDate'
 
 function Subscriptions(props) {
-  const  [city, setCity] = useState(props.from)
+  const  [city, setCity] = useState(props.to)
 
   const onChangedFun = () =>{
     setCity("Rawalpindi")
     console.log(setCity)
-  }
-  
+  }  
 
   return (
     <>
     <div className='subscription'>
       <SubscriptionDate date={props.date}/>
         {/* <div>{props.date}</div> */}
+        <h2 className="subscription_title">{props.from}</h2>
         <h2 className="subscription_title">{city}</h2>
-        <h2 className="subscription_title">{props.to}</h2>
         <div className="subscription_price ">{props.ticket}</div>
         <button type='button' onClick={onChangedFun}>Change Title</button>
       

@@ -8,7 +8,7 @@ function NAvbar() {
             <div className="logo">Saifeee</div>
                 <div className='navbar'>
                     <nav>
-                        <a href="#">Home</a>
+                        <a href="">Home</a>
                         <a href="#">Services</a>
                         <a href="#">About</a>
                         <a href="#">Contact</a>
