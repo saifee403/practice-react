@@ -3,49 +3,70 @@ import NAvbar from './components/NAvbar';
 import Subscriptions from './components/Subscriptions';
 
 function App() {
-  let subscription =[
+  let booking=[
     {
       id:"1",
-      date: (new Date("2023","04 ","18")),
-      title:"Monthly Subscription",
-      price:"30$"
+      date:(new Date('2023','05','19')),
+      from:"Multan",
+      to:"Lahore",
+      ticket:"1890"
     },
     {
       id:"2",
-      date: (new Date("2023","05","18")),
-      title:"Weekly Subscription",
-      price:"8$"
+      date:(new Date('2023','05','19')),
+      from:"Multan",
+      to:"Lahore",
+      ticket:"1890"
     },
     {
       id:"3",
-      date: (new Date("2023","05","18")),
-      title:"Yearly Subscription",
-      price:"360$"
-    },
-    {
-      id:"4",
-      date: (new Date("2023","05","18")),
-      title:"Daily Subscription",
-      price:"1$"
-    },
-    {
-      id:"5",
-      date: (new Date("2023","05","18")),
-      title:"15Days Subscription",
-      price:"15$"
+      date:(new Date('2023','05','19')),
+      from:"Multan",
+      to:"Lahore",
+      ticket:"1890"
     }
   ]
+  // let subscription =[
+  //   {
+  //     id:"1",
+  //     date: (new Date("2023","04 ","18")),
+  //     title:"Monthly Subscription",
+  //     price:"30$"
+  //   },
+  //   {
+  //     id:"2",
+  //     date: (new Date("2023","05","18")),
+  //     title:"Weekly Subscription",
+  //     price:"8$"
+  //   },
+  //   {
+  //     id:"3",
+  //     date: (new Date("2023","05","18")),
+  //     title:"Yearly Subscription",
+  //     price:"360$"
+  //   },
+  //   {
+  //     id:"4",
+  //     date: (new Date("2023","05","18")),
+  //     title:"Daily Subscription",
+  //     price:"1$"
+  //   },
+  //   {
+  //     id:"5",
+  //     date: (new Date("2023","05","18")),
+  //     title:"15Days Subscription",
+  //     price:"15$"
+  //   }
+  // ]
   
   return (
     <>
     <NAvbar/>
     <div className="App">
       <h1>Muhammad Saif Ur Rehman</h1>
-      <Subscriptions date={subscription[0].date} title={subscription[0].title} amount={subscription[0].price}/>
-      <Subscriptions date={subscription[1].date} title={subscription[1].title} amount={subscription[1].price}/>
-      <Subscriptions date={subscription[2].date} title={subscription[2].title} amount={subscription[2].price}/> 
-      <Subscriptions date={subscription[3].date} title={subscription[3].title} amount={subscription[3].price}/> 
-      <Subscriptions date={subscription[4].date} title={subscription[4].title} amount={subscription[4].price}/> 
+      <Subscriptions date={booking[0].date} from={booking[0].from} to={booking[0].to} ticket={booking[0].ticket}/>
+      <Subscriptions date={booking[1].date} from={booking[1].from} to={booking[1].to} ticket={booking[1].ticket}/>
+      <Subscriptions date={booking[2].date} from={booking[2].from} to={booking[2].to} ticket={booking[2].ticket}/>
     </div>
     </>
   );
