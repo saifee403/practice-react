@@ -1,5 +1,6 @@
 import './App.css';
 import NAvbar from './components/NAvbar';
+import NewSub from './components/NewSub';
 import Subscriptions from './components/Subscriptions';
 
 function App() {
@@ -64,6 +65,7 @@ function App() {
     <NAvbar/>
     <div className="App">
       <h1>Muhammad Saif Ur Rehman</h1>
+      <NewSub/>
       <Subscriptions date={booking[0].date} from={booking[0].from} to={booking[0].to} ticket={booking[0].ticket}/>
       <Subscriptions date={booking[1].date} from={booking[1].from} to={booking[1].to} ticket={booking[1].ticket}/>
       <Subscriptions date={booking[2].date} from={booking[2].from} to={booking[2].to} ticket={booking[2].ticket}/>

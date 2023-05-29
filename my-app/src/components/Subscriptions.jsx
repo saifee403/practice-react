@@ -18,7 +18,7 @@ function Subscriptions(props) {
         <h2 className="subscription_title">{props.from}</h2>
         <h2 className="subscription_title">{city}</h2>
         <div className="subscription_price ">{props.ticket}</div>
-        <button type='button' onClick={onChangedFun}>Change Title</button>
+        <button className='btns' type='button' onClick={onChangedFun}>Change Title</button>
       
     </div>
     </>
